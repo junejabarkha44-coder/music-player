@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <main>
+    <div class="main">
+        <i class="fas fa-list" id="bini" ></i>
+        <h1>FEEL THE MUSIC</h1>
+        <i class="fas fa-music"></i>
+</div>
+<div class="main-2"> 
+    <div class="left">
+        <div class="song-image">
+            <img src="musician.webp" id="musician">
+        </div>
+        <div class="volume">
+            <i class="fa-solid fa-volume-high"   id="volume-icon"></i> 
+             <!-- <img src="volume.svg" alt="volume" class="fa-solid.fa-volume-high"> -->
+             <!-- <img src="volume.svg" id="volR"> -->
+             <input type="range" id="volume-range"  onchange="volume()"/>
+        </div>
+    </div>
+     <div class="right">
+        <div class="details">
+            <h2 class="song-name">Ve Kamleya</h2>
+            <h5 class="singer-name">Arijit sing</h5>
+        </div>
+        <input type="range" id="song-duration" onchange="duration()">
+        <div class="controls">
+        <img src="prev.SVG" alt="prev" id="prev-img" onclick="previous()">
+        <img src="play.SVG" alt="play" id="play-pause" onclick="playPause()">
+        <img src="forward.SVG" alt="forward" id="forward-img" onclick="forward()">
+         </div> 
+    </div> 
+    <div class="playlist">
+    <div class=playlist-song >
+        <img src="arjit ji.jpg">
+        <div class="song-details">
+        <h2>Ve kamleya</h2>
+        <h5>Arjit Singh</h5>
+        </div>
+    </div>
+    <div class=playlist-song >
+        <img src="vishalm.jpg">
+        <div class="song-details">
+        <h2>Pehle bhi main</h2>
+        <h5>Vishal Mishra</h5>
+        </div>
+    </div>
+    <div class=playlist-song >
+        <img src="garry.jpg">
+        <div class="song-details">
+        <h2>First Love</h2>
+        <h5>Garry Sandhu</h5>
+        </div></div>
+    <div class=playlist-song >
+     <img src="jasmine.jpg">
+        <div class="song-details">
+        <h2>Khand lagdi</h2>
+        <h5>Jasmine Sandals</h5>
+        </div>
+    </div>
+</div>
+</div>
+    </main>
+<script src="musicpla.js"></script>
+</body> 
+</html>
